@@ -1,4 +1,9 @@
-<?php
+###############################################################
+#
+#  Link http://18.212.213.107/~hallyma.gauthier/lab3.php
+#
+##############################################################
+#<?php
 function createEmail($name, $lastname)
 {
     $email = $name.".".$lastname."@upr.edu";
@@ -18,7 +23,6 @@ catch (Exception $exception) {
 $query = "select * from estudiantesc12";
 $statement = mysqli_prepare($connection, $query);
 mysqli_stmt_execute($statement);
-#mysqli_bind_result($statement, $id, $nombres, $apellidos);
 $results= mysqli_stmt_get_result($statement);
 $total_rows=mysqli_stmt_affected_rows($statement);
 mysqli_stmt_close($statement);
