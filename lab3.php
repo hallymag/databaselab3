@@ -5,10 +5,8 @@ function createEmail($name, $lastname)
     $email = str_replace(" ", "", $email);
     return $email;
 }
-#require "connection.php";
+require "connection.php"
 $hostname = "localhost";
-$username = "hallyma.gauthier";
-$pswd = "801912923";
 $database = "laboratorio";
 
 try {
